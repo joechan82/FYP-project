@@ -21,7 +21,7 @@ jobs:
       - name: Deploy to Cloud Functions
         run: |
           gcloud functions deploy helloWorld \
-            --runtime nodejs16 \
+            --runtime nodejs20 \
             --trigger-http \
             --allow-unauthenticated \
-            --region us-west1
+            --region asia-east2
